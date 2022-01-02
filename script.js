@@ -5,18 +5,9 @@ var body = document.getElementById("mainBody");
 
 function changeGradient() {
     body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+    colorInfo.textContent = body.style.background + ";";
 }
 
-function updateColorInfo() {
-    colorInfo.innerHTML = color1.value + " - " + color2.value;
-}
+color1.addEventListener("input", changeGradient);
 
-color1.addEventListener("input", function() {
-    changeGradient();
-    updateColorInfo();
-});
-
-color2.addEventListener("input", function() {
-    changeGradient();
-    updateColorInfo();
-});
+color2.addEventListener("input", changeGradient);
