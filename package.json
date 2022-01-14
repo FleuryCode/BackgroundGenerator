@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/FleuryCode/BackgroundGenerator/issues"
   },
-  "homepage": "https://github.com/FleuryCode/BackgroundGenerator#readme"
+  "homepage": "https://github.com/FleuryCode/BackgroundGenerator#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
